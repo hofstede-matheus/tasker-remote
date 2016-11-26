@@ -32,8 +32,11 @@ After all base funcionality is implemented I'm going to start making a more usef
 
 [plugins](http://tasker.dinglisch.net/plugins.html)
 
+[gson userguide](https://github.com/google/gson/blob/master/UserGuide.md)
+
 ### libs used in this project:
 [Digitus](https://github.com/afollestad/digitus)
+[gson](https://github.com/google/gson)
 
 
 
