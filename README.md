@@ -41,13 +41,12 @@ After all base funcionality is implemented I'm going to start making a more usef
 ### json task object
 ```javascript
 {
-     "authentication_method": 1,
-     "password": "5f4dcc3b5aa765d61d8327deb882cf99",
      "title": "Task Title",
      "desc": "short description of the task",
-     "pic_id": R.id...,
      "task_name": "Task name is the exactly name of the task in Tasker",
-     "category": "To organize"
+     "category": "To organize",
+     "password": "5f4dcc3b5aa765d61d8327deb882cf99",
+     "authentication_method": 1
     }
 ```
 
