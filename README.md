@@ -36,6 +36,7 @@ After all base funcionality is implemented I'm going to start making a more usef
 
 ### libs used in this project:
 [Digitus](https://github.com/afollestad/digitus)
+
 [gson](https://github.com/google/gson)
 
 
