@@ -12,7 +12,11 @@
     <list default="true" id="fbfdbb27-a368-4717-bf7d-9188f51b1509" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Activity/MainActivity.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Adapter/MainCardsAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Etc/ActionCodes.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Etc/RecyclerItemClickListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Etc/TaskerHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Etc/TaskerIntent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hofstedematheus/tasker_remote/Etc/TaskerPlugin.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/task_card_full.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/task_card_tiny.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_1.xml" afterPath="" />
