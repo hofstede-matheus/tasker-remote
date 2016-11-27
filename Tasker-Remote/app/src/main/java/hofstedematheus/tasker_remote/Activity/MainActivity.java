@@ -9,12 +9,16 @@ import android.widget.Toast;
 
 import hofstedematheus.tasker_remote.Adapter.MainCardsAdapter;
 import hofstedematheus.tasker_remote.Etc.RecyclerItemClickListener;
+import hofstedematheus.tasker_remote.Etc.TaskerHelper;
 import hofstedematheus.tasker_remote.Etc.TaskerIntent;
+import hofstedematheus.tasker_remote.Objects.Task;
 import hofstedematheus.tasker_remote.R;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     MainCardsAdapter mainCardsAdapter;
+    TaskerHelper taskerHelper;
+    Task task;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,18 @@ public class MainActivity extends AppCompatActivity {
         String[] names = {"Task1","task2","task3","task4","task5"};
 
         recyclerView = (RecyclerView)findViewById(R.id.main_RV);
+
+        taskerHelper = new TaskerHelper(this);
+        
+        task = new Task();
+        task.setTitle("Title of task 1");
+        task.setDesc("Thats the fucking description of task 1");
+        task.setTask_name("cu");
+        task.setCategory("Toast");
+        task.setPassword(null);
+        task.setAuthentication_method(0);
+
+
         mainCardsAdapter = new MainCardsAdapter(names);
         recyclerView.setLayoutManager(new GridLayoutManager(this,3));
         recyclerView.hasFixedSize();
@@ -39,10 +55,8 @@ public class MainActivity extends AppCompatActivity {
                                 taskName = "cu";
                                 break;
                         }
-                        Toast.makeText(getApplicationContext(), TaskerIntent.testStatus(getApplicationContext()) + "" + position, Toast.LENGTH_SHORT).show();
-                        if (TaskerIntent.testStatus(getApplicationContext()).equals(TaskerIntent.Status.OK)){
-                            TaskerIntent i = new TaskerIntent(taskName);
-                            sendBroadcast(i);
+                        if (taskerHelper.isStatusOK()){
+                            taskerHelper.callTask(taskName);
                         }
                     }
                 })
